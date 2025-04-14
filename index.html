@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>TODO List</title>
+
+    <!-- Meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Sweet Alert -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11.15.2/dist/sweetalert2.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- font style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans+Caption:wght@400;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Toastr -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"
+    />
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="Font awesome/css/all.min.css" />
+
+    <!-- Bootstrap sheet -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- style sheet -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- todo app start  -->
+
+    <section class="w-75 mx-auto my-5">
+      <div
+        class="status-todo bg-light bg-opacity-25 p-3 rounded-3 mb-4 shadow border d-flex align-items-center justify-content-between"
+      >
+        <div class="flex-grow-1">
+          <h1 class="h5">TODO APP</h1>
+          <span class="small">Keep it up!</span>
+          <div id="progressBar">
+            <div id="progress"></div>
+          </div>
+        </div>
+        <div class="status-number"><span>0</span> / <span>0</span></div>
+      </div>
+
+      <form class="d-flex gap-5 bg-white rounded-4 p-4 shadow">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Task to be done..."
+        />
+        <button type="submit" class="text-white add-task rounded-2 border-none">
+          Add
+        </button>
+      </form>
+
+      <div>
+        <ul
+          class="task-container text-decoration-none bg-white mt-5 rounded-4 shadow p-4"
+        ></ul>
+      </div>
+    </section>
+
+    <div class="loading d-none align-items-center justify-content-center">
+      <span class="loader"></span>
+    </div>
+
+    <!-- todo app end  -->
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="
+    https://cdn.jsdelivr.net/npm/sweetalert2@11.15.2/dist/sweetalert2.all.min.js
+    "></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- main js -->
+    <script src="js/JScode.js"></script>
+  </body>
+</html>
