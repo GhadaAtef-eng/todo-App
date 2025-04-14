@@ -1,10 +1,14 @@
 :root {
-  --main-color: #ae37eecf;
+  --main-color: #a30e9ecf;
 }
 
 body {
   font-family: "Bree Serif", serif;
-  background-color: var(--main-color);
+  /* background-color: var(--main-color); */
+  background-image: url(../images/bg2.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .add-task {
@@ -14,8 +18,8 @@ body {
 }
 
 .form-control:focus {
-  box-shadow: 0 0 0 5px #ae37ee75;
-  border: solid #ae37ee75;
+  box-shadow: 0 0 0 5px #ee37ae75;
+  border: solid #b0177d75;
 }
 
 .task-container .icon {
@@ -95,7 +99,7 @@ body {
 #progressBar {
   height: 10px;
   width: 100%;
-  background-color: #892be297;
+  background-color: #e22bdc97;
   border-radius: 5px;
   margin-top: 10px;
   overflow: hidden;
@@ -103,7 +107,7 @@ body {
 
 #progressBar #progress{
   height: inherit;
-  background-color: rgb(81, 15, 142);
+  background-color: rgb(127, 15, 142);
   width: 0%;
   border-radius: 5px;
   transition: width 0.7s;
