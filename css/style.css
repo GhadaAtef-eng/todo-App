@@ -6,7 +6,7 @@ body {
   font-family: "Bree Serif", serif;
   /* background-color: var(--main-color); */
   background-image: url(../images/bg2.jpeg);
-  background-position: center;
+  /* background-position: center; */
   background-size: cover;
   background-repeat: no-repeat;
 }
